@@ -2,20 +2,22 @@
 <html>
     <head>
         <title>Grupi 3 projekt</title>
-        <style>
-            table, th, td{
-                border: 1px solid black;
-                border-collapse: collapse;
-            }
-        </style>
+        <link rel="stylesheet" href="./style.css">
+      
     </head>
     <body>
-        <header>
-
-            <h1>Titulli i projektit</h1>
-        </header>
-        <main>
-            <form action="" method="">
+        <div class="header">
+            <div class="Logo">
+                <img src="./telefrafLogo.svg" height="40px">
+            </div>
+            <div class="nav">
+                <a class="navLink">Sport</a>
+                <a class="navLink">Lajme</a>
+                <a class="navLink">teknologji</a>
+            </div>
+        </div>
+        <div class="main">
+            <form action="" method="" id="Forma1">
                 <label>Emri juaj:</label>
                 <input type="text" placeholder="Sheno emrin tuaj"/>
                 <br>
@@ -27,12 +29,12 @@
                 <label >Gjinia:</label>
                 <select >
                     <option></option>
-                    <option >Femer</option>
-                    <option >Mashkull</option>
+                    <option id="F">Femer</option>
+                    <option id="M">Mashkull</option>
     
                 </select>
                 <br> <br>
-                <button type="submit"> 
+                <button type="submit" class="button1"> 
                     dergo
                 </button>
                 <br> <br>
@@ -41,37 +43,42 @@
     
             <table>
                 <thead>
-                    <tr>
+                    <tr class="tabelHead1">
                         <td>
                            <b>Emri</b> 
                         </td>
-                        <td>
+                        <td class="lastName">
                            <b>Mbiemri</b> 
                         </td>
-                        <td><b>
+                        <td class="location">
+                            <b>
                             Vendbanimi
-    
-                        </b>
+                            </b>
                         </td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Festina</td>
-                        <td>Qerimi</td>
-                        <td>Podujeve</td>
+                        <td class="lastName">Qerimi</td>
+                        <td class="location">Podujeve</td>
+                    </tr>
+                    <tr class="Florentina">
+                        <td>Florentina</td>
+                        <td class="lastName">Shala</td>
+                        <td class="location">Pejë</td>
                     </tr>
                     <tr>
-                        <td>Florentina</td>
-                        <td>Shala</td>
-                        <td>Pejë</td>
+                        <td>Blina</td>
+                        <td class="lastName">Sopjani</td>
+                        <td class="location" id="Pr">Prishtinë</td>
                     </tr>
                 </tbody>
             </table>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.280085205547!2d21.161375115196456!3d42.65541972439079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee873aedf7d%3A0x4dd0f2f99a79804d!2sVentureUP%20-%20University%20of%20Prishtina%20Venture%20Incubator!5e0!3m2!1sen!2s!4v1665239950862!5m2!1sen!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
         </main>
-     <footer>
+     <div class="footer">
         Coppyright VentureUp
      </footer>
     </body>
